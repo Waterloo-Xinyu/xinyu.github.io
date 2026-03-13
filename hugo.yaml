@@ -31,7 +31,7 @@ languages:
       disableNavbar: true  # 禁止自动生成菜单，解决重复
       navbar:
         brandName: "Dr. Xinyu Huang"
-        logo: "/fav.png"
+        logo: "fav.png"
       hero:
         enable: true
         intro: "Hi, my name is"
@@ -201,7 +201,7 @@ languages:
 
 # 全局参数
 params:
-  favicon: "/fav.png"
+  favicon: "fav.png"
   mathjax: true
   animate: true
   customScripts: |-
