@@ -200,7 +200,7 @@ languages:
 
 # 全局参数
 params:
-  favicon: "fav.png"
+  favicon: "/fav.png"
   mathjax: true
   animate: true
   customScripts: |-
