@@ -1,0 +1,482 @@
+baseURL: "https://Waterloo-Xinyu.github.io"
+title: "Xinyu Huang"
+theme: hugo-profile
+
+# --- 核心新增：强行解锁 HTML 渲染权限，确保换行和大卡片生效 ---
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# 仅保留英文
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+outputs:
+  home: [ "HTML", "RSS", "JSON" ]
+  page: [ "HTML", "RSS" ]
+
+enableRobotsTXT: true
+
+languages:
+  # ==========================================
+  # 英文版配置 (English)
+  # ==========================================
+  en:
+    languageName: "EN"
+    weight: 1
+    contentDir: "content"
+    menu:
+    params:
+      disableNavbar: true  # 禁止自动生成菜单，解决重复
+      navbar:
+        brandName: "Dr. Xinyu Huang"
+      hero:
+        enable: true
+        intro: "Hi, my name is"
+        title: "Xinyu Huang"
+        subtitle: "Postdoctoral Fellow at the University of Waterloo"
+        image: me.png
+        button:
+          enable: true
+          name: "Email Me"
+          url: "mailto:x357huan@uwaterloo.ca"
+          download: false
+          newPage: false
+      about:
+        enable: true
+        title: "About Me"
+        content: |-
+          Xinyu Huang's research interests include:
+        skills:
+          enable: true
+          items: ["Digital Twins/Agents", "ISAC", "Multimedia Communications", "Network Management", "Generative AI", "Non-Terrestrial Networks"]
+      education:
+        enable: true
+        title: "Education"
+        items:
+          - title: "Ph.D. in Electrical and Computer Engineering, University of Waterloo"
+            company: " "
+            date: "2021 - 2025"
+          - title: "M.S. in Information and Communications Engineering, Xi'an Jiaotong University"
+            company: " "
+            date: "2018 - 2021"
+          - title: "B.E. in Qian Xuesen Experimental Class, Xi'dian University"
+            company: " "
+            date: "2014 - 2018"
+
+      experience:
+        enable: true
+        title: "Selected Publications"
+        items:
+          - company: "Journals"
+            jobs:
+              - name: " "
+                content: |-
+                  1. X. Shen, **X. Huang***, J. Xue, C. Zhou, X. Shi, and W. Zhuang, "Revolutionizing QoE-Driven Network Management with Digital Agents in 6G," *IEEE Communications Magazine*, Feb. 2026. [DOI](https://ieeexplore.ieee.org/abstract/document/10955336)
+                  
+                  1. W. Wu, **X. Huang***, "Split-LEO: Efficient AI Model Training over LEO Satellite Networks," *Science China Information Sciences*, Aug. 2025. [DOI](https://link.springer.com/article/10.1007/s11432-024-4523-1)
+                  
+                  1. W. Wu, **X. Huang***, M. Qin, Q. Li, and T. H. Luan, "AI-Native Network Digital Twin for Intelligent Network Management in 6G," *IEEE Network*, Nov. 2025. [DOI](https://ieeexplore.ieee.org/abstract/document/11244812)
+                  
+                  1. X. Qin, **X. Huang***, S. Hu, and X. Shen, "Omni-DDPG-based Secure Computation Offloading in Collaborative Mobile Edge Computing," *IEEE Transactions on Mobile Computing (TMC)*, Feb. 2026. [DOI](https://ieeexplore.ieee.org/abstract/document/11408232)
+                  
+                  1. **X. Huang**, Y. Zhang, Y. Pei, J. Xue, and X. Shen, "Experience-centric Resource Management in ISAC Networks: A Digital Agent-Assisted Approach," *IEEE Transactions on Mobile Computing (TMC)*, Mar. 2026. [DOI](https://ieeexplore.ieee.org/document/11427339)
+                  
+                  1. **X. Huang**, X. Qin, C. Huang, and X. Shen, "Adaptive digital twin-assisted 3D management for QoE-driven MSVS: A GAI-based DRL approach," *IEEE Transactions on Cognitive Communications and Networking (TCCN)*, Apr. 2025. [DOI](https://ieeexplore.ieee.org/abstract/document/10794650)
+                  
+                  1. **X. Huang**, S. Hu, H. Yang, X. Wang, Y. Pei, and X. Shen, "Digital twin-based network management for better QoE in multicast short video streaming," *IEEE Transactions on Wireless Communications (TWC)*, Aug. 2024. [DOI](https://ieeexplore.ieee.org/document/10637933)
+                  
+                  1. **X. Huang**, W. Wu, S. Hu, M. Li, C. Zhou, and X. Shen, "Digital twin based user-centric resource management for multicast short video streaming," *IEEE Journal of Selected Topics in Signal Processing (JSTSP)*, Jan. 2024. [DOI](https://ieeexplore.ieee.org/abstract/document/10363344)
+                  
+                  1. **X. Huang**, H. Yang, C. Zhou, X. Shen, and W. Zhuang, "When digital twin meets generative AI: Intelligent closed-loop network management," *IEEE Network*, 2024. [DOI](https://ieeexplore.ieee.org/document/10818633)
+                  
+                  1. **X. Huang**, H. Yang, S. Hu, and X. Shen, "Digital twin-driven network architecture for video streaming," *IEEE Network*, Apr. 2024. [DOI](https://ieeexplore.ieee.org/document/10494370)
+                  
+                  1. **X. Huang**, L. He, X. Chen, and F. Li, "Revenue and energy efficiency-driven delay-constrained computing task offloading and resource allocation in a Vehicular Edge Computing Network: A Deep Reinforcement Learning Approach," *IEEE Internet of Things Journal (IoTJ)*, Jun. 2022. [DOI](https://ieeexplore.ieee.org/abstract/document/9552188)
+                  
+                  1. **X. Huang**, L. He, L. Wang, and F. Li, "Towards 5G: Joint optimization of video segment caching, transcoding and resource allocation for adaptive video streaming in a multi-access edge computing network," *IEEE Transactions on Vehicular Technology (TVT)*, Oct. 2021. [DOI](https://ieeexplore.ieee.org/abstract/document/9525340)
+                  
+                  1. **X. Huang** and L. He, "Playback experience driven cross layer optimisation of APP, transport and MAC layer for video clients over long‐term evolution system," *IET Communications*, 2020. [DOI](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/iet-com.2019.0645)
+          - company: "Conferences"
+            jobs:
+              - name: " "
+                content: |-         
+                  1. **X. Huang**, S. Hu, M. Li, C. Huang, and X. Shen, "Efficient digital twin data processing for low-latency multicast short video streaming," *IEEE ICCC*, 2024. [DOI](https://ieeexplore.ieee.org/document/10681739)
+                  
+                  1. **X. Huang**, W. Wu, and X. Shen, "Digital twin-assisted resource demand prediction for multicast short video streaming," *IEEE ICDCS*, 2023. [DOI](https://ieeexplore.ieee.org/abstract/document/10272501)
+                  
+                  1. **X. Huang**, M. Li, W. Wu, C. Zhou, and X. Shen, "Digital twin-assisted collaborative transcoding for better user satisfaction in live streaming," *IEEE ICC*, 2023. [DOI](https://ieeexplore.ieee.org/abstract/document/10279382)
+                  
+                  1. **X. Huang**, C. Zhou, W. Wu, M. Li, H. Wu, and X. Shen, "Personalized QoE enhancement for adaptive video streaming: A digital twin-assisted scheme," *IEEE GLOBECOM*, 2022. [DOI](https://ieeexplore.ieee.org/abstract/document/10001020)
+                  
+                  1. **X. Huang**, L. He, X. Cheng, G. Liu, and F. Li, "A more refined mobile edge cache replacement scheme for adaptive video streaming with mutual cooperation in multi-mec servers," *IEEE ICME*, 2020. [DOI](https://ieeexplore.ieee.org/abstract/document/9102971)
+                  
+                  1. **X. Huang**, L. He, W. Zhang, "Vehicle speed aware computing task offloading and resource allocation based on multi-agent reinforcement learning in a vehicular edge computing network," *IEEE EDGE*, 2020. [DOI](https://ieeexplore.ieee.org/abstract/document/9284254)
+          - company: "Book Chapters"
+            jobs:
+              - name: " "
+                content: |-
+                  1. **X. Huang**, "Digital Twin-Assisted Network Management for QoE-Driven Short Video Streaming," *Foundations of Digital Twins*, pp. 192-210. Editors: M.K. Rafsanjani, J. Cai, T.A. Nguyen, Elsevier, 2026. (ISBN: 9780443438967)
+                  
+                  1. **X. Huang**, "Digital Twin-Assisted Adaptive Video Streaming Optimization in the Smart Classroom," *Digital Twins in the Smart Classroom: Utilising Sensor Networks in the Educational Environment*, pp. 50-69. Editors: Tuan Anh Nguyen, Elsevier, 2026. (ISBN: 9780443416323)
+          - company: "Preprints"
+            jobs:
+              - name: " "
+                content: |-
+
+      projects:
+        enable: true
+        title: "Professional Services"
+        items:
+          - title: "Reviewer"
+            content: |-
+              • IEEE Wireless Communications
+              • IEEE Network
+              • IEEE Internet of Things Magazine (IoTM)
+              • IEEE Journal on Selected Areas in Communications (JSAC)
+              • IEEE Transactions on Wireless Communications (TWC)
+              • IEEE Transactions on Mobile Computing (TMC)
+              • IEEE Internet of Things Journal (IoTJ)
+              • IEEE Transactions on Cognitive Communications and Networking (TCCN)
+              • IEEE Transactions on Vehicular Technology (TVT)
+              • IEEE Transactions on Green Communications and Networking (TGCN)
+              • IEEE Systems Journal
+              • Peer-to-Peer Networking and Applications (P2PNA)
+              • Wireless Networks
+              • IEEE/CIC ICCC: 2023, 2024, 2025
+              • IEEE IPCCC: 2023
+              • IEEE ICME: 2021, 2022, 2023, 2024, 2025
+              • IEEE ICC: 2022, 2023
+              • IEEE INFOCOM WKSHPS (PerAI-6G): 2022, 2023, 2024
+              • IEEE ICMI.CN: 2024
+              • IEEE VTC: 2022-Spring, 2023-Fall, 2024-Spring, 2024-Fall, 2025-Fall
+              • Canadian Conference on AI: 2023
+              • Canadian Conference on ECE (CCECE): 2024
+
+          - title: "Technical Program Committee Member"
+            content: |-
+              • IEEE INFOCOM WKSHPS (PerAI-6G): 2022, 2023, 2024
+              • IEEE VTC: 2023-Fall, 2024-Spring, 2024-Fall, 2025-Fall
+              • IEEE/CIC ICCC: 2024, 2025
+              • IEEE ICCT: 2023
+              • IEEE GLOBECOM: 2024, 2025, 2026
+              • IEEE MECOM: 2024, 2025
+
+          - title: "Keynote and Panel Co-chair"
+            content: |-
+              • IEEE INFOCOM PerAI-6G, 2025
+
+          - title: "Membership"
+            content: |-
+              • IEEE Graduate Student Member, since 2021
+              • IEEE ComSoc Student Member, since 2022
+              • IEEE Vehicular Technology Society Student Member, since 2022
+
+      achievements:
+        enable: true
+        title: "Honours and Awards"
+        items:
+          - title: "Awards & Scholarships"
+            content: |-
+              • Best Student Paper at VTC 2025-Fall
+              • Third Prize at Four Minute Thesis (4MT) Competition, IEEE GLOBECOM 2024
+              • IEEE KW Section Graduate scholarship, 2024
+              • 2023 Chinese Government Award for Outstanding Self-financed Students Abroad, China Scholarship Council, 2024
+              • Finalist at Four Minute Thesis (4MT) Competition, IEEE ICC 2024
+              • Faculty of Engineering Graduate Scholarship (x4), University of Waterloo, 2024–2025 (maximum number awarded in PhD program)
+              • Student Project Competition Iron Medal, IEEE Comsoc, 2023
+              • Xuemin Shen Graduate Scholarship in Telecommunication at the University of Waterloo, 2023, 2024
+              • Graduate Student Research Dissemination Award at the University of Waterloo, 2023
+              • Jon W. Mark Graduate Scholarship in Communication at the University of Waterloo, 2022
+              • Graduate with Honor at the Xi'an Jiaotong University, 2021
+              • Excellent Student at the Xi’an Jiaotong University, 2020
+              • Excellent Postgraduate Cadre at the Xi'an Jiaotong University, 2019
+              • The 1st-Class Scholarship at the Xidian University, 2017
+              • Second Prize in Chinese Mathematics Competitions, 2017
+              • Second Prize in China Undergraduate Mathematical Contest in Modeling, 2016
+              • Finalist Prize in Certificate Authority Cup International Mathematical Contest in Modeling, 2016
+              • Grand Prize in Asia and Pacific Mathematical Contest in Modeling, 2016
+
+# 全局参数
+params:
+  favicon: "/fav.png"
+  mathjax: true
+  animate: true
+  customScripts: |-
+    <style> 
+      /* ================= 全局统一 Arial 字体 ================= */
+      body, h1, h2, h3, h4, h5, h6, p, a, span, div, li, ul, strong, em {
+          font-family: Arial, sans-serif !important;
+      }
+      
+      /* 修改导航栏品牌区：变为 Flex 布局并垂直居中 */
+      .navbar-brand {
+          display: flex !important;
+          align-items: center !important; 
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+      }
+    
+      /* 设置 Logo 大小 */
+      .navbar-brand img { 
+          height: 100px !important; 
+          width: auto !important; 
+          margin-right: 15px; 
+      } 
+    
+      /* 1. 放大底部 Footer 的 Logo */
+      footer img {
+          height: 100px !important; 
+          width: auto !important;
+          margin-top: 20px !important;
+          margin-bottom: 10px !important;
+      }
+
+      /* 确保文字部分也垂直居中，不带额外的边距 */
+      .navbar-brand span, .navbar-brand {
+          line-height: 1 !important;
+      }
+    
+      /* 栅格布局调整 */
+      #about ul { grid-template-columns: repeat(3, 1fr) !important; }
+      @media (max-width: 768px) { #about ul { grid-template-columns: repeat(2, 1fr) !important; } }
+    
+      /* ================= 学术论文排版 (核武器终结版) ================= */
+    
+      /* 1. 隐藏左侧时间/分类列，让右侧内容占满 100% 宽度 */
+      #experience .tab-content .col-md-4 { display: none !important; }
+      #experience .tab-content .col-md-8 { width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; }
+    
+      /* 2. 【核武器拦截】：在论文内容区，除了我们的段落 <p>，其他的蓝字、横杠、占位符统统隐形！ */
+      #experience .tab-content .col-md-8 > *:not(p) { 
+          display: none !important; 
+      }
+    
+      /* 3. 面板重置计数器 */
+      #experience .tab-pane { counter-reset: pubCounter; }
+    
+      /* 4. 完美的内部安全区悬挂缩进（绝不错位、不溢出） */
+      #experience .tab-content .col-md-8 p {
+          font-size: 16px !important; 
+          line-height: 1.6 !important;
+          margin-bottom: 1.2rem !important;
+          position: relative !important;
+          padding-left: 35px !important; 
+          text-indent: 0 !important;     
+          counter-increment: pubCounter;
+      }
+    
+      /* 将编号精准放置在刚才腾出的 35px 安全区内 */
+      #experience .tab-content .col-md-8 p::before {
+          content: "[" counter(pubCounter) "]" !important;
+          position: absolute !important;
+          left: 0 !important; 
+          top: 0 !important;
+          font-weight: bold !important;
+      }
+      
+      /* --- 增大导航栏菜单项字体 --- */
+      .navbar-nav .nav-link {
+          font-size: 18px !important;    
+          font-weight: 500 !important;    
+          padding-left: 12px !important;  
+          padding-right: 12px !important;
+          transition: all 0.3s ease;     
+      }
+      
+      /* 调整名字的字号 */
+      .navbar-brand {
+          font-size: 22px !important;     
+      }
+      
+      /* 调整搜索框的文字大小，保持整体统一 */
+      #search-input {
+          font-size: 16px !important;
+      }
+    
+      /* 保护加粗和斜体 */
+      #experience .tab-content strong { font-weight: bold !important; color: inherit; }
+      #experience .tab-content em { font-style: italic !important; color: inherit; }
+      
+      /* 5. DOI 小按钮 */
+      #experience .tab-content p a {
+          display: inline-block !important;
+          margin-left: 8px;
+          padding: 2px 8px;
+          font-size: 13px !important;
+          color: #007bff !important;
+          border: 1px solid #007bff !important;
+          border-radius: 4px;
+          text-decoration: none !important;
+          font-weight: normal !important;
+          transition: all 0.3s ease;
+      }
+      #experience .tab-content p a:hover {
+          background-color: #007bff !important;
+          color: white !important;
+      }
+
+    /* ================= 学术服务 (并排4卡片) & 荣誉奖项 (单列) ================= */
+      
+      #projects img, #achievements img { display: none !important; }
+    
+      /* 1. 学术服务容器：开启横向弹性网格 */
+      #projects .row {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          margin: 0 -10px !important; /* 抵消列间距 */
+      }
+    
+      /* 2. 学术服务列：强行四等分 (25% 宽度) */
+      #projects .row > div {
+          flex: 0 0 25% !important;
+          max-width: 25% !important;
+          padding: 0 10px !important; /* 卡片之间的空隙 */
+          display: flex !important;   /* 保证内部卡片等高 */
+      }
+    
+      /* 3. 响应式：屏幕较小时自动变成 2 列或 1 列，防止挤爆 */
+      @media (max-width: 1200px) {
+          #projects .row > div { flex: 0 0 50% !important; max-width: 50% !important; margin-bottom: 20px !important; }
+      }
+      @media (max-width: 768px) {
+          #projects .row > div { flex: 0 0 100% !important; max-width: 100% !important; }
+      }
+    
+      /* 4. 荣誉奖项容器：因为只有一项，保持 100% 宽度的单列 */
+      #achievements .row {
+          display: block !important; 
+          margin: 0 !important;
+      }
+      #achievements .row > div {
+          flex: 0 0 100% !important;
+          max-width: 100% !important;
+          width: 100% !important;
+          padding: 0 !important;
+      }
+    
+      /* 5. 卡片外观 (透明底，完美适配夜间模式) */
+      #projects .card, #achievements .card {
+          background-color: transparent !important; /* 核心：背景完全透明 */
+          border-radius: 8px !important;
+          box-shadow: none !important; /* 去掉阴影，透明底加阴影会显得脏 */
+          border: 1px solid rgba(128, 128, 128, 0.2) !important; /* 改用半透明边框，黑夜白昼都柔和 */
+          width: 100% !important;
+          margin-bottom: 20px !important; 
+      }
+      
+      /* 调整内边距保持不变 */
+      #projects .card-body { padding: 20px 15px !important; }
+      #achievements .card-body { padding: 30px 40px !important; }
+    
+      /* 6. 小标题样式 (解除颜色锁定) */
+      #projects h5, #achievements h5 {
+          font-weight: bold !important;
+          font-size: 18px !important; 
+          color: inherit !important; /* 核心：跟随系统黑夜/白天模式自动变色 */
+          border-bottom: 1px solid rgba(128, 128, 128, 0.2) !important; /* 半透明下划线 */
+          padding-bottom: 8px;
+          margin-top: 0 !important;    
+          margin-bottom: 12px !important; 
+          text-align: left !important;
+      }
+    
+      /* 7. 正文样式 (解除颜色锁定) */
+      #projects p, #projects .card-text, #projects div,
+      #achievements p, #achievements .card-text, #achievements div {
+          font-size: 14px !important; 
+          line-height: 1.8 !important; 
+          color: inherit !important; /* 核心：跟随系统自动变白/变黑，防止夜间模式看不见字 */
+          text-align: left !important;
+          white-space: pre-line !important; 
+          margin-top: 0 !important;   
+          padding-top: 0 !important;
+      }
+
+
+      /* ================= 消除首屏 (Hero) 区域巨大的底部留白 ================= */
+      #hero, #hero .container {
+          min-height: auto !important;    
+          height: auto !important;
+          padding-top: 80px !important;   
+          padding-bottom: 40px !important;
+      }
+
+      /* 防止大屏下内容被强行垂直居中导致错位 */
+      #hero .row {
+          align-items: flex-start !important;
+      }
+
+      /* ================= 宽度布局约束 (全站 70% 居中) ================= */
+          
+      /* 1. 放大该版块的外层容器宽度 */
+      #experience .container {
+          max-width: 75% !important; 
+      }
+    
+      /* 2. 突破内部的列宽限制，让白色卡片完全撑满上面的 70% 空间 */
+      #experience .row > div {
+          flex: 0 0 100% !important;
+          max-width: 100% !important;
+      }
+          
+      /* 3. 让卡片内部的文本区域也彻底释放 */
+      #experience .card {
+          width: 100% !important;
+      }
+    
+      /* 约束特定版块为 75% 宽度并居中 */
+      @media (min-width: 992px) {
+          #projects .container, 
+          #achievements .container {
+              max-width: 80% !important;
+              width: 80% !important;
+              margin: 0 auto !important; /* 确保版块在屏幕正中间 */
+          }
+      }
+    /* ================= 彻底消除卡片顶部幽灵占位框 ================= */
+      
+      /* 强力隐藏卡片里除了正文(.card-body)之外的所有东西（比如隐形的图片包装盒） */
+      #projects .card > *:not(.card-body),
+      #achievements .card > *:not(.card-body) {
+          display: none !important;
+          height: 0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+      }
+
+      /* 重新规范卡片的内边距，确保小标题乖乖贴近顶部边缘 */
+      #projects .card-body {
+          padding: 25px 15px !important; /* 控制四卡片的顶部和左右留白 */
+      }
+      #achievements .card-body {
+          padding: 30px 40px !important; /* 控制底部大卡片的留白 */
+      }
+    /* ================= 修复 Honours and Awards 间距与灰色背景 ================= */
+      
+      /* 1. 缩小主标题 ("Honours and Awards") 与下方卡片的间距 */
+      #achievements h2, 
+      #achievements h3, 
+      #achievements .section-title {
+          margin-bottom: 15px !important; /* 缩小标题下方的距离 */
+          padding-bottom: 0 !important;
+      }
+      #achievements .row {
+          margin-top: 0 !important;
+      }
+
+      /* 2. 彻底清除卡片内部的灰色背景 (强制解除代码块伪装) */
+      #achievements pre, 
+      #achievements code,
+      #achievements .card-text,
+      #achievements p {
+          background-color: transparent !important; /* 背景变透明 */
+          background: none !important;
+          border: none !important;                  /* 去掉可能存在的灰色边框 */
+          padding: 0 !important;
+          color: inherit !important;
+          white-space: pre-line !important;         /* 保持我们之前的换行魔法 */
+          font-family: Arial, sans-serif !important;/* 确保字体不变回等宽代码字体 */
+      }
+    </style>
