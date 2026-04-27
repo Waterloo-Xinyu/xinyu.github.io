@@ -64,7 +64,7 @@ languages:
           - title: "M.S. in Information and Communications Engineering, Xi'an Jiaotong University"
             company: " "
             date: "Sept. 2018 - Jun. 2021"
-          - title: "B.E. in Qian Xuesen Experimental Class, Xi'dian University"
+          - title: "B.E. in Qian Xuesen Experimental Class, Xidian University"
             company: " "
             date: "Sept. 2014 - Jun. 2018"
 
@@ -94,7 +94,7 @@ languages:
                   
                   1. **X. Huang**, L. He, L. Wang, and F. Li, "Towards 5G: Joint optimization of video segment caching, transcoding and resource allocation for adaptive video streaming in a multi-access edge computing network," *IEEE Transactions on Vehicular Technology (TVT)*, Oct. 2021. [DOI](https://ieeexplore.ieee.org/abstract/document/9525340)
                   
-                  1. **X. Huang** and L. He, "Playback experience driven cross layer optimisation of APP, transport and MAC layer for video clients over long‐term evolution system," *IET Communications*, 2020. [DOI](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/iet-com.2019.0645)
+                  1. **X. Huang** and L. He, "Playback experience driven cross-layer optimisation of APP, transport and MAC layer for video clients over long‐term evolution system," *IET Communications*, 2020. [DOI](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/iet-com.2019.0645)
                   
                   1. W. Wu, **X. Huang***, "Split-LEO: Efficient AI Model Training over LEO Satellite Networks," *Science China Information Sciences*, Aug. 2025. [DOI](https://link.springer.com/article/10.1007/s11432-024-4523-1)
 
@@ -130,6 +130,8 @@ languages:
             jobs:
               - name: " "
                 content: |-
+                1. **X. Huang**, Y. Zhang, X. Qin, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Informed Digital Twins for Channel Estimation and Traffic Prediction of Non-Terrestrial Networks," submitted to IEEE JSAC Journal, 2026.
+                1. **X. Huang**, X. Qin, Y. Zhang, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Conditional Diffusion for High-Fidelity Channel Digital Twins in Non-Terrestrial Networks," Submitted to IEEE/CIC ICCC Conference, 2026.
 
       projects:
         enable: true
@@ -155,7 +157,7 @@ languages:
               • IEEE ICME: 2021, 2022, 2023, 2024, 2025
               • IEEE ICC: 2022, 2023
               • IEEE INFOCOM WKSHPS (PerAI-6G): 2022, 2023, 2024
-              • IEEE ICMI.CN: 2024
+              • IEEE ICMLCN: 2024
               • IEEE VTC: 2022-Spring, 2023-Fall, 2024-Spring, 2024-Fall, 2025-Fall
               • Canadian Conference on AI: 2023
               • Canadian Conference on ECE (CCECE): 2024
@@ -172,6 +174,7 @@ languages:
           - title: "Keynote and Panel Co-chair"
             content: |-
               • IEEE INFOCOM PerAI-6G, 2025
+              • IEEE ICCT, 2026
 
           - title: "Membership"
             content: |-
