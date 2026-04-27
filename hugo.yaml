@@ -130,9 +130,9 @@ languages:
             jobs:
               - name: " "
                 content: |-
-                1. **X. Huang**, Y. Zhang, X. Qin, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Informed Digital Twins for Channel Estimation and Traffic Prediction of Non-Terrestrial Networks," submitted to **IEEE JSAC Journal**, 2026.
+                  1. **X. Huang**, Y. Zhang, X. Qin, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Informed Digital Twins for Channel Estimation and Traffic Prediction of Non-Terrestrial Networks," submitted to **IEEE JSAC Journal**, 2026.
                 
-                1. **X. Huang**, X. Qin, Y. Zhang, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Conditional Diffusion for High-Fidelity Channel Digital Twins in Non-Terrestrial Networks," Submitted to **IEEE/CIC ICCC Conference**, 2026.
+                  1. **X. Huang**, X. Qin, Y. Zhang, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Conditional Diffusion for High-Fidelity Channel Digital Twins in Non-Terrestrial Networks," Submitted to **IEEE/CIC ICCC Conference**, 2026.
 
       projects:
         enable: true
