@@ -123,7 +123,7 @@ languages:
             jobs:
               - name: " "
                 content: |-
-                  1. **X. Huang**, "Digital Twin-Assisted Network Management for QoE-Driven Short Video Streaming," *Foundations of Digital Twins*, pp. 192-210. Editors: M.K. Rafsanjani, J. Cai, T.A. Nguyen, Elsevier, 2026. (ISBN: 9780443438967)
+                  1. **X. Huang**, "Digital Twin for Short Video Streaming Optimization," *Foundations of Digital Twins*, pp. 211-225. Editors: M.K. Rafsanjani, J. Cai, T.A. Nguyen, Elsevier, 2026. (ISBN: 9780443438967)
                   
                   1. **X. Huang**, "Digital Twin-Assisted Adaptive Video Streaming Optimization in the Smart Classroom," *Digital Twins in the Smart Classroom: Utilising Sensor Networks in the Educational Environment*, pp. 50-69. Editors: Tuan Anh Nguyen, Elsevier, 2026. (ISBN: 9780443416323)
           - company: "Preprints"
