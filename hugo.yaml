@@ -132,7 +132,9 @@ languages:
                 content: |-
                   1. **X. Huang**, Y. Zhang, X. Qin, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Informed Digital Twins for Channel Estimation and Traffic Prediction of Non-Terrestrial Networks," submitted to *IEEE JSAC Journal*, 2026.
                 
-                  1. **X. Huang**, X. Qin, Y. Zhang, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Conditional Diffusion for High-Fidelity Channel Digital Twins in Non-Terrestrial Networks," submitted to *IEEE/CIC ICCC Conference*, 2026.
+                  1. **X. Huang**, X. Qin, Y. Zhou, Y. Zhang, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Conditional Diffusion for High-Fidelity Channel Digital Twins in Non-Terrestrial Networks," submitted to *IEEE/CIC ICCC Conference*, 2026.
+
+                  1. **X. Huang**, Mingcheng He, Xiaodan Shao, Lei Lei, Weihua Zhuang, and X. Shen, "Closed-Loop Task-Oriented Resource Orchestration for Embodied Agents at Wireless Network Edge," submitted to *IEEE Wireless Communications*, 2026.
 
       projects:
         enable: true
