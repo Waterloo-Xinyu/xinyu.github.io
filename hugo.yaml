@@ -136,6 +136,8 @@ languages:
                   
                   1. **X. Huang**, M. He, X. Shao, L. Lei, W. Zhuang, and X. Shen, "Closed-Loop Task-Oriented Resource Orchestration for Embodied Agents at Wireless Network Edge," submitted to *IEEE Wireless Communications*, 2026.
 
+                  1. **X. Huang**, N. Lu, L. Lei, J. Cai, W. Zhuang, and X. Shen, "Agent-Assisted Segment Deployment and Resource Reservation for Fast Edge LLM Inference," submitted to *IEEE ToN Journal*, 2026.
+
       projects:
         enable: true
         title: "Professional Services"
