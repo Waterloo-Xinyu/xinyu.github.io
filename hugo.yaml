@@ -107,7 +107,9 @@ languages:
           - company: "Conferences"
             jobs:
               - name: " "
-                content: |-   
+                content: |- 
+                  1. **X. Huang**, Y. Zhou, H. Hashida, M. He, X. Qin, C. Zhou, W. Zhuang, and X. Shen, "Digital Twin-Assisted Online Resource Allocation for Service Continuity in Non-Terrestrial Networks," *IEEE ICCT*, 2026.
+                  
                   1. **X. Huang**, X. Qin, Y. Zhou, Y. Zhang, M. He, J. Li, W. Zhuang, and X. Shen, "Physics-Conditional Diffusion for High-Fidelity Channel Digital Twins in Non-Terrestrial Networks," *IEEE/CIC ICCC*, 2026.
                   
                   1. **X. Huang**, S. Hu, M. Li, C. Huang, and X. Shen, "Efficient digital twin data processing for low-latency multicast short video streaming," *IEEE ICCC*, 2024. [DOI](https://ieeexplore.ieee.org/document/10681739)
@@ -137,6 +139,8 @@ languages:
                   1. **X. Huang**, M. He, X. Shao, L. Lei, W. Zhuang, and X. Shen, "Closed-Loop Task-Oriented Resource Orchestration for Embodied Agents at Wireless Network Edge," submitted to *IEEE Wireless Communications*, 2026.
 
                   1. **X. Huang**, N. Lu, L. Lei, J. Cai, W. Zhuang, and X. Shen, "Agent-Assisted Segment Deployment and Resource Reservation for Fast Edge LLM Inference," submitted to *IEEE ToN Journal*, 2026.
+
+                  1. **X. Huang**, Y. Zhang, N. Lu, L. Lei, and R. Lu, "Uncertainty-Aware Digital Twins for Closed-Loop Resource Management in Non-Terrestrial Networks," submitted to *IEEE TWC Journal*, 2026.
 
       projects:
         enable: true
