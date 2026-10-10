@@ -33,7 +33,7 @@ languages:
       disableNavbar: true  # 禁止自动生成菜单，解决重复
       navbar:
         brandName: "Dr. Xinyu Huang"
-        #logo: "fav.png"
+        logo: "fav.png"
       hero:
         enable: true
         intro: "Hi, my name is"
@@ -584,3 +584,118 @@ params:
               }
           }
     </style>
+
+    <style>
+      .navbar-brand.brand-with-university-logos {
+        flex-wrap: wrap;
+        gap: 12px 24px;
+        max-width: calc(100% - 50px);
+      }
+      .university-logo-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        width: 480px;
+        max-width: 100%;
+      }
+      .university-logo-group .university-mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 0;
+        min-width: 0;
+        text-decoration: none;
+      }
+      .university-logo-group .university-mark:last-child { flex-grow: 1.6; }
+    .university-logo-group .university-logo {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: 100px !important;
+        margin: 0 !important;
+        object-fit: contain;
+      }
+      .university-logo-group .queens-logo-dark { display: none !important; }
+      .dark .university-logo-group .queens-logo-light { display: none !important; }
+      .dark .university-logo-group .queens-logo-dark { display: block !important; }
+      #university-footer-logos {
+        display: flex !important;
+        justify-content: center;
+        padding: 24px 16px;
+      }
+      @media (max-width: 576px) {
+        .navbar-brand.brand-with-university-logos { width: calc(100% - 50px); }
+        .university-logo-group { width: 100%; gap: 18px; }
+        .university-logo-group .university-logo { max-height: 68px !important; }
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function createQueenImages() {
+          var holder = document.createElement("span");
+          holder.className = "university-mark";
+          [
+            ["/queens-logo.svg", "queens-logo-light"],
+            ["/queens-logo-reversed.svg", "queens-logo-dark"]
+          ].forEach(function (variant) {
+            var image = document.createElement("img");
+            image.src = variant[0];
+            image.alt = "Queen's University";
+            image.className = "university-logo " + variant[1];
+            image.decoding = "async";
+            holder.appendChild(image);
+          });
+          return holder;
+        }
+    
+        var brand = document.querySelector("header .navbar-brand");
+        var originalLogo = brand && brand.querySelector("img");
+        if (originalLogo && !brand.querySelector(".university-logo-group")) {
+          var group = document.createElement("span");
+          group.className = "university-logo-group";
+          var waterloo = document.createElement("span");
+          waterloo.className = "university-mark";
+          brand.insertBefore(group, originalLogo);
+          originalLogo.classList.add("university-logo");
+          originalLogo.alt = "University of Waterloo";
+          waterloo.appendChild(originalLogo);
+          group.appendChild(waterloo);
+          group.appendChild(createQueenImages());
+          brand.classList.add("brand-with-university-logos");
+        }
+    
+        var footer = document.querySelector("footer");
+        if (footer && !document.getElementById("university-footer-logos")) {
+          var row = document.createElement("div");
+          row.id = "university-footer-logos";
+          row.className = "container";
+          var footerGroup = document.createElement("div");
+          footerGroup.className = "university-logo-group";
+    
+          var waterlooLink = document.createElement("a");
+          waterlooLink.className = "university-mark";
+          waterlooLink.href = "https://uwaterloo.ca/";
+          waterlooLink.target = "_blank";
+          waterlooLink.rel = "noopener noreferrer";
+          var waterlooImage = document.createElement("img");
+          waterlooImage.src = originalLogo ? originalLogo.src : "/fav.png";
+          waterlooImage.alt = "University of Waterloo";
+          waterlooImage.className = "university-logo";
+          waterlooLink.appendChild(waterlooImage);
+    
+          var queensLink = document.createElement("a");
+          queensLink.className = "university-mark";
+          queensLink.href = "https://www.queensu.ca/";
+          queensLink.target = "_blank";
+          queensLink.rel = "noopener noreferrer";
+          var queensImages = createQueenImages();
+          while (queensImages.firstChild) queensLink.appendChild(queensImages.firstChild);
+    
+          footerGroup.appendChild(waterlooLink);
+          footerGroup.appendChild(queensLink);
+          row.appendChild(footerGroup);
+          footer.insertBefore(row, footer.firstChild);
+        }
+      });
+    </script>
