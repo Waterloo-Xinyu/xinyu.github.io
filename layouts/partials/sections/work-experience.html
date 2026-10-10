@@ -19,8 +19,8 @@
   }
   #work-experience .work-entry-title {
     margin: 0;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 500;
   }
   #work-experience .work-entry-date { font-size: 14px; }
   #work-experience .work-entry-company { margin: 10px 0; }
@@ -37,7 +37,7 @@
         {{ range .items }}
         <article class="work-entry">
           <div class="work-entry-header">
-            <h4 class="work-entry-title">{{ .job }}</h4>
+            <h5 class="work-entry-title">{{ .job }}</h5>
             {{ with .date }}<span class="work-entry-date">{{ . }}</span>{{ end }}
           </div>
           <div class="work-entry-company">
@@ -58,3 +58,4 @@
 </section>
 {{- end -}}
 {{- end -}}
+<!-- （注：内容由AI生成） -->
