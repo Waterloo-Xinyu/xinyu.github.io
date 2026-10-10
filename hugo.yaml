@@ -610,7 +610,7 @@ params:
       .university-logo-group .university-mark:last-child { flex-grow: 1.6; }
     .university-logo-group .university-logo {
         display: block !important;
-        width: 100% !important;
+        width: 80% !important;
         height: auto !important;
         max-height: 100px !important;
         margin: 0 !important;
