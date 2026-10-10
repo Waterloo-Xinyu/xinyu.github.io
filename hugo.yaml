@@ -381,7 +381,7 @@ params:
     
       /* 3. 响应式：屏幕较小时自动变成 2 列或 1 列，防止挤爆 */
       @media (max-width: 1200px) {
-          #projects .row > div { flex: 0 0 50% !important; max-width: 50% !important; margin-bottom: 20px !important; }
+          #projects .row > div { flex: 0 0 100% !important; max-width: 100% !important; margin-bottom: 20px !important; }
       }
       @media (max-width: 768px) {
           #projects .row > div { flex: 0 0 100% !important; max-width: 100% !important; }
@@ -589,7 +589,7 @@ params:
       .navbar-brand.brand-with-university-logos {
         flex-wrap: wrap;
         gap: 12px 24px;
-        max-width: calc(50% - 50px);
+        max-width: calc(100% - 50px);
       }
       .university-logo-group {
         display: flex;
@@ -597,7 +597,7 @@ params:
         justify-content: center;
         gap: 24px;
         width: 480px;
-        max-width: 50%;
+        max-width: 100%;
       }
       .university-logo-group .university-mark {
         display: flex;
@@ -610,7 +610,7 @@ params:
       .university-logo-group .university-mark:last-child { flex-grow: 1.6; }
     .university-logo-group .university-logo {
         display: block !important;
-        width: 50% !important;
+        width: 100% !important;
         height: auto !important;
         max-height: 100px !important;
         margin: 0 !important;
@@ -625,8 +625,8 @@ params:
         padding: 24px 16px;
       }
       @media (max-width: 576px) {
-        .navbar-brand.brand-with-university-logos { width: calc(50% - 50px); }
-        .university-logo-group { width: 50%; gap: 18px; }
+        .navbar-brand.brand-with-university-logos { width: calc(100% - 50px); }
+        .university-logo-group { width: 100%; gap: 18px; }
         .university-logo-group .university-logo { max-height: 68px !important; }
       }
     </style>
