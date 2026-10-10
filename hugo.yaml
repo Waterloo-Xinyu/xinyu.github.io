@@ -54,7 +54,7 @@ languages:
         skills:
           enable: true
           items: ["Digital Twins/Agents", "ISAC", "Multimedia Communications", "Network Management", "Generative AI", "Non-Terrestrial Networks"]
-      experience:
+      workExperience:
         enable: true
         title: "Work Experience"
         items:
