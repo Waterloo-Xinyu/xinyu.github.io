@@ -38,7 +38,7 @@ languages:
         enable: true
         intro: "Hi, my name is"
         title: "Xinyu Huang"
-        subtitle: "Postdoctoral Fellow at the University of Waterloo"
+        subtitle: "Postdoctoral Fellow at Queen's University, Canada"
         image: me.png
         button:
           enable: true
@@ -54,6 +54,23 @@ languages:
         skills:
           enable: true
           items: ["Digital Twins/Agents", "ISAC", "Multimedia Communications", "Network Management", "Generative AI", "Non-Terrestrial Networks"]
+      experience:
+        enable: true
+        title: "Work Experience"
+        items:
+          - job: "Postdoctoral Fellow"
+            company: "Queen's University, Canada"
+            companyUrl: "https://www.queensu.ca/"
+            date: "Sept. 2026 - Present"
+            content: |-
+              Supervisors: Prof. Ning Lu and Prof. Rongxing Lu.
+
+          - job: "Postdoctoral Fellow"
+            company: "University of Waterloo, Canada"
+            companyUrl: "https://uwaterloo.ca/"
+            date: "Sept. 2025 - Aug. 2026"
+            content: |-
+              Supervisor: Prof. Xuemin (Sherman) Shen.
       education:
         enable: true
         title: "Education"
