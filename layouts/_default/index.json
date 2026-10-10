@@ -1,5 +1,88 @@
-{{- $.Scratch.Add "index" slice -}}
+{{- $home := .Site.Home.RelPermalink -}}
+{{- $index := slice -}}
+
+{{- /* 正文页（博客等），保留主题原有逻辑 */ -}}
 {{- range .RegularPagesRecursive -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "description" .Params.description "content" .Content "image" .Params.image "permalink" .Permalink) -}}
+    {{- $index = $index | append (dict "title" .Title "description" .Params.description "content" .Content "image" .Params.image "permalink" .Permalink) -}}
 {{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
+
+{{- /* Hero */ -}}
+{{- with .Site.Params.hero -}}
+  {{- if .enable | default false -}}
+    {{- $text := trim (printf "%s %s %s" (.intro | default "") (.title | default "") (.subtitle | default "")) " " -}}
+    {{- $index = $index | append (dict "title" (.title | default "Home") "description" (.subtitle | default "") "content" $text "permalink" (printf "%s#hero" $home)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* About */ -}}
+{{- with .Site.Params.about -}}
+  {{- if .enable | default false -}}
+    {{- $text := printf "%s %s" (.content | default "") (delimit (.skills | default slice) " ") -}}
+    {{- $index = $index | append (dict "title" (.title | default "About") "description" (.content | default "") "content" $text "permalink" (printf "%s#about" $home)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Work Experience */ -}}
+{{- with .Site.Params.workexperience -}}
+  {{- if .enable | default false -}}
+    {{- range .items | default slice -}}
+      {{- $text := printf "%s %s %s %s" (.job | default "") (.company | default "") (.date | default "") (.content | default "") -}}
+      {{- $index = $index | append (dict "title" (printf "%s @ %s" (.job | default "") (.company | default "")) "description" (.company | default "") "content" $text "permalink" (printf "%s#work-experience" $home)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Education */ -}}
+{{- with .Site.Params.education -}}
+  {{- if .enable | default false -}}
+    {{- range .items | default slice -}}
+      {{- $text := printf "%s %s %s" (.title | default "") (.summary | default "") (.content | default "") -}}
+      {{- $index = $index | append (dict "title" (.title | default "Education") "description" (.summary | default "") "content" $text "permalink" (printf "%s#education" $home)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Experience（本站在配置里用作 Selected Publications） */ -}}
+{{- with .Site.Params.experience -}}
+  {{- if .enable | default false -}}
+    {{- $sectionTitle := .title | default "Experience" -}}
+    {{- range .items | default slice -}}
+      {{- $company := .company | default "" -}}
+      {{- $all := slice -}}
+      {{- range .jobs | default slice -}}
+        {{- $all = $all | append (.content | default "") -}}
+      {{- end -}}
+      {{- $text := delimit $all " " -}}
+      {{- $index = $index | append (dict "title" (printf "%s - %s" $sectionTitle $company) "description" $company "content" $text "permalink" (printf "%s#experience" $home)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Projects */ -}}
+{{- with .Site.Params.projects -}}
+  {{- if .enable | default false -}}
+    {{- range .items | default slice -}}
+      {{- $text := printf "%s %s %s" (.title | default "") (.content | default "") (delimit (.badges | default slice) " ") -}}
+      {{- $index = $index | append (dict "title" (.title | default "Project") "description" (.content | default "") "content" $text "permalink" (printf "%s#projects" $home)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Achievements */ -}}
+{{- with .Site.Params.achievements -}}
+  {{- if .enable | default false -}}
+    {{- range .items | default slice -}}
+      {{- $text := printf "%s %s" (.title | default "") (.content | default "") -}}
+      {{- $index = $index | append (dict "title" (.title | default "Achievement") "description" (.content | default "") "content" $text "permalink" (printf "%s#achievements" $home)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Contact */ -}}
+{{- with .Site.Params.contact -}}
+  {{- if .enable | default false -}}
+    {{- $index = $index | append (dict "title" (.title | default "Contact") "description" (.content | default "") "content" (.content | default "") "permalink" (printf "%s#contact" $home)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $index | jsonify -}}
