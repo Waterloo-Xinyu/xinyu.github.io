@@ -1,0 +1,60 @@
+{{- $work := .Site.Language.Params.workexperience | default .Site.Params.workexperience -}}
+{{- with $work -}}
+{{- if .enable -}}
+<style>
+  #work-experience .work-entry {
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 8px;
+    background: transparent;
+    color: inherit;
+  }
+  #work-experience .work-entry-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+  #work-experience .work-entry-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #work-experience .work-entry-date { font-size: 14px; }
+  #work-experience .work-entry-company { margin: 10px 0; }
+  #work-experience .work-entry-content p:last-child { margin-bottom: 0; }
+  @media (max-width: 576px) {
+    #work-experience .work-entry { padding: 18px; }
+  }
+</style>
+<section id="work-experience" class="py-5" aria-labelledby="work-experience-title">
+  <div class="container">
+    <h3 id="work-experience-title" class="text-center">{{ .title | default "Work Experience" }}</h3>
+    <div class="row justify-content-center py-4">
+      <div class="col-12 col-md-9">
+        {{ range .items }}
+        <article class="work-entry">
+          <div class="work-entry-header">
+            <h4 class="work-entry-title">{{ .job }}</h4>
+            {{ with .date }}<span class="work-entry-date">{{ . }}</span>{{ end }}
+          </div>
+          <div class="work-entry-company">
+            {{ if .companyUrl }}
+            <a href="{{ .companyUrl }}" target="_blank" rel="noopener noreferrer">{{ .company }}</a>
+            {{ else }}
+            {{ .company }}
+            {{ end }}
+          </div>
+          {{ with .content }}
+          <div class="work-entry-content">{{ . | markdownify }}</div>
+          {{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{- end -}}
+{{- end -}}
