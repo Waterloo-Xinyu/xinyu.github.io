@@ -97,6 +97,15 @@
                     </li>
                     {{ end }}
 
+                    {{ if and (.Site.Params.workexperience.enable | default false) (not (.Site.Params.navbar.menus.disableWorkExperience | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.Home.RelPermalink }}#work-experience" aria-label="work-experience">
+                            {{ .Site.Params.workexperience.title | default "Work Experience" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
+
                     {{ if and (.Site.Params.experience.enable | default false) (not (.Site.Params.navbar.menus.disableExperience | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.Home.RelPermalink }}#experience"
