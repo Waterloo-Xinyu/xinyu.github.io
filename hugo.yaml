@@ -1,4 +1,4 @@
-baseURL: "https://Waterloo-Xinyu.github.io"
+baseURL: "https://waterloo-xinyu.github.io/xinyu.github.io/"
 title: "Xinyu Huang"
 theme: hugo-profile
 
@@ -636,8 +636,8 @@ params:
           var holder = document.createElement("span");
           holder.className = "university-mark";
           [
-            ["/queens-logo.svg", "queens-logo-light"],
-            ["/queens-logo-reversed.svg", "queens-logo-dark"]
+            ["/xinyu.github.io/queens-logo.svg", "queens-logo-light"],
+            ["/xinyu.github.io/queens-logo-reversed.svg", "queens-logo-dark"]
           ].forEach(function (variant) {
             var image = document.createElement("img");
             image.src = variant[0];
