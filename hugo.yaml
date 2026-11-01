@@ -161,7 +161,7 @@ languages:
 
                   1. **X. Huang**, N. Lu, L. Lei, J. Cai, W. Zhuang, and X. Shen, "Agent-Assisted Segment Deployment and Resource Reservation for Fast Edge LLM Inference," submitted to *IEEE ToN Journal*, 2026.
 
-                  1. **X. Huang**, Y. Zhang, N. Lu, L. Lei, and R. Lu, "Uncertainty-Aware Digital Twins for Closed-Loop Resource Management in Non-Terrestrial Networks," submitted to *IEEE TWC Journal*, 2026.
+                  1. **X. Huang**, Y. Zhang, N. Lu, L. Lei, and R. Lu, "Uncertainty-Aware Digital Twins for Closed-Loop Resource Management in Non-Terrestrial Networks," submitted to *IEEE TWC Journal*, Major Revision, 2026.
 
       projects:
         enable: true
